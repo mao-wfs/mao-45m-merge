@@ -1,32 +1,56 @@
-[tool.poetry]
+[project]
 name = "mao-45m-merge"
 version = "0.2.1"
-description = "Merge MAO datasets observed with the Nobeyama 45m telescope"
-authors = ["Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>"]
-license = "MIT"
+description = "MAO data merge for the Nobeyama 45m telescope"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "dask[complete]>=2024,<2026",
+    "matplotlib>=3,<4",
+    "numpy>=2,<3",
+    "pandas>=2,<3",
+    "scipy>=1,<2",
+    "tomlkit>=0.11,<1.0",
+    "tqdm>=4,<5",
+    "typing-extensions>=4,<5",
+    "xarray>=2024,<2026",
+    "xarray-dataclasses>=1,<2",
+    "zarr>=2,<3",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.8, <3.11"
-dask = { version = "^2022.5", extras = ["complete"] }
-matplotlib = "^3.5"
-numpy = "^1.22"
-pandas = "^1.4"
-scipy = "^1.8"
-tomlkit = "^0.10"
-tqdm = "^4.64"
-typing-extensions = "^3.10"
-xarray = "^2022.3"
-xarray-dataclasses = "^1.1"
-zarr = "^2.11"
+[[project.authors]]
+name = "Akio Taniguchi"
+email = "taniguchi.akio@gmail.com"
 
-[tool.poetry.group.dev.dependencies]
-black = "^22.3"
-ipython = "^8.2"
-myst-parser = "^0.17"
-pydata-sphinx-theme = "^0.8"
-pytest = "^7.1"
-sphinx = "^4.5"
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+repository = "https://github.com/mao-wfs/mao-45m-merge"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "black>=25,<26",
+    "ipython>=8,<10",
+    "myst-parser>=3,<5",
+    "pydata-sphinx-theme>=0.16,<1",
+    "pyright>=1,<2",
+    "pytest>=8,<9",
+    "sphinx>=7,<9",
+]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+reportAttributeAccessIssue = "warning"
