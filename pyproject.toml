@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mao-merge-45m"
+name = "mao-45m-merge"
 version = "0.2.1"
 description = "Merge MAO datasets observed with the Nobeyama 45m telescope"
 authors = ["Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>"]

@@ -7,7 +7,7 @@ from tempfile import TemporaryDirectory
 import numpy as np
 import pandas as pd
 import xarray as xr
-from mao_merge_45m.weather import convert
+from mao_45m_merge.weather import convert
 
 
 # constants

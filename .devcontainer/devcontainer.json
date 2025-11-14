@@ -1,5 +1,5 @@
 {
-    "name": "mao-merge-45m",
+    "name": "mao-45m-merge",
     "image":"python:3.10",
     "onCreateCommand": "pip install poetry==1.7.1",
     "postCreateCommand": "poetry install",

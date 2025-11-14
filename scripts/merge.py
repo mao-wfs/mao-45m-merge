@@ -5,7 +5,7 @@ from re import compile
 
 
 # dependencies
-from mao_merge_45m import correlator, merge
+from mao_45m_merge import correlator, merge
 
 
 # constants
