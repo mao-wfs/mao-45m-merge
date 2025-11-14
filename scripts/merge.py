@@ -36,7 +36,7 @@ def main() -> None:
                 path_weather_zarr=DATA / "weather" / "2022-05.zarr",
                 path_antenna_zarr=DATA / "antenna" / "2022-05.zarr",
                 path_thermometer_zarr=DATA / "thermometer" / "2022-05.zarr",
-                path_power_meter_zarr=DATA / "power_meter" / "2022-05.zarr",
+                path_powermeter_zarr=DATA / "powermeter" / "2022-05.zarr",
                 time_offset=1000,
             )
 

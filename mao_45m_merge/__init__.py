@@ -10,7 +10,7 @@ from . import antenna
 from . import antenna_50_sps
 from . import correlator
 from . import merge
-from . import power_meter
+from . import powermeter
 from . import sam45
 from . import thermometer
 from . import weather

@@ -6,11 +6,11 @@ from tempfile import TemporaryDirectory
 # third-party packages
 import pandas as pd
 import xarray as xr
-from mao_45m_merge.power_meter import convert
+from mao_45m_merge.powermeter import convert
 
 
 # constants
-TEST_CSV = Path("data") / "power_meter_2022144230000Z.csv"
+TEST_CSV = Path("data") / "powermeter_2022144230000Z.csv"
 
 
 # test function
@@ -22,4 +22,4 @@ def test_convert() -> None:
         data_ds = xr.open_zarr(path_zarr)
 
         assert data_ds.time[0] == pd.Timestamp("2022-05-24T22:58:49.000000000")
-        assert data_ds.power_meter[0] == -14.161
+        assert data_ds.powermeter[0] == -14.161
