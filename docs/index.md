@@ -7,5 +7,5 @@ hidden:
 ---
 
 Home <self>
-Package guide <_apidoc/mao_merge_45m>
+Package guide <_apidoc/mao_45m_merge>
 ```

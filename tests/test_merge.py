@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 
 # third-party packages
 import xarray as xr
-from mao_merge_45m import accelerometer, antenna, correlator, merge, weather
+from mao_45m_merge import accelerometer, antenna, correlator, merge, weather
 from xarray.testing import assert_allclose
 
 

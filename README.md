@@ -1,12 +1,10 @@
-# mao-merge-45m
-Merge MAO datasets observed with the Nobeyama 45m telescope
+# mao-45m-merge
+MAO data merge for the Nobeyama 45m telescope
 
 ## Installation
 
 ```shell
-$ git clone https://github.com/mao-wfs/mao-merge-45m.git
-$ cd mao-merge-45m
-$ poetry install
+pip install mao-45m-merge==0.3.0
 ```
 
 ## Convert raw data to formatted (Zarr) data
@@ -15,7 +13,7 @@ $ poetry install
 
 ```python
 from pathlib import Path
-from mao_merge_45m import correlator
+from mao_45m_merge import correlator
 
 
 path_vdif = Path("/path/to/data.vdif")
@@ -27,7 +25,7 @@ path_fmt_zarr = correlator.convert(path_raw_zarr)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import accelerometer
+from mao_45m_merge import accelerometer
 
 
 path_gbd = Path("/path/to/data.gbd")
@@ -39,7 +37,7 @@ path_fmt_zarr = accelerometer.convert(path_raw_zarr)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import accelerometer_csv
+from mao_45m_merge import accelerometer_csv
 
 
 path_csv = Path("/path/to/data.csv")
@@ -50,7 +48,7 @@ path_zarr = accelerometer_csv.convert(path_csv)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import weather
+from mao_45m_merge import weather
 
 
 path_csv = Path("/path/to/data.csv")
@@ -61,7 +59,7 @@ path_zarr = accelerometer.convert(path_csv)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import antenna
+from mao_45m_merge import antenna
 
 
 path_log = Path("/path/to/data.txt")
@@ -72,7 +70,7 @@ path_zarr = antenna.convert(path_log)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import antenna_50_sps
+from mao_45m_merge import antenna_50_sps
 
 
 path_log = Path("/path/to/data.txt")
@@ -83,7 +81,7 @@ path_zarr = antenna_50_sps.convert(path_log)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import sam45
+from mao_45m_merge import sam45
 
 
 path_log = Path("/path/to/data.txt")
@@ -94,7 +92,7 @@ path_zarr = sam45.convert(path_log)
 
 ```python
 from pathlib import Path
-from mao_merge_45m import merge
+from mao_45m_merge import merge
 
 
 path_correlator = Path("/path/to/formatted/correlator.zarr")

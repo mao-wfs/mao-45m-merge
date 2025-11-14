@@ -14,7 +14,7 @@ from xarray_dataclasses import AsDataset, Attr, Data, Dataof
 
 
 # constants
-LOG_COLS = "time", "power_meter"
+LOG_COLS = "time", "powermeter"
 JST_HOURS = np.timedelta64(9, "h")
 
 
@@ -31,10 +31,10 @@ class TotalPower:
 
 @dataclass
 class PowerMeter(AsDataset):
-    """Representation of power meter logs in xarray."""
+    """Representation of powermeter logs in xarray."""
 
-    power_meter: Dataof[TotalPower] = 0.0
-    """The output of the power meter."""
+    powermeter: Dataof[TotalPower] = 0.0
+    """The output of the powermeter."""
 
 
 def convert(
@@ -47,7 +47,7 @@ def convert(
 ) -> Path:
     """Convert a raw log file(s) to a formatted Zarr file.
 
-    This function will make a one-dimensional power meter log outputs
+    This function will make a one-dimensional powermeter log outputs
     with time metadata derived from the raw log file.
 
     Args:

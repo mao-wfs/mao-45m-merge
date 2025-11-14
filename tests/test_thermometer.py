@@ -6,7 +6,7 @@ from tempfile import NamedTemporaryFile, TemporaryDirectory
 # third-party packages
 import pandas as pd
 import xarray as xr
-from mao_merge_45m.thermometer import convert
+from mao_45m_merge.thermometer import convert
 
 
 # constants
