@@ -4,7 +4,7 @@ import mao_45m_merge
 
 # constants
 AUTHOR: str = "Akio Taniguchi"
-VERSION: str = "0.2.1"
+VERSION: str = "0.3.0"
 
 
 # test functions

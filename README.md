@@ -1,12 +1,10 @@
 # mao-45m-merge
-Merge MAO datasets observed with the Nobeyama 45m telescope
+MAO data merge for the Nobeyama 45m telescope
 
 ## Installation
 
 ```shell
-$ git clone https://github.com/mao-wfs/mao-45m-merge.git
-$ cd mao-45m-merge
-$ poetry install
+pip install mao-45m-merge==0.3.0
 ```
 
 ## Convert raw data to formatted (Zarr) data

@@ -812,7 +812,7 @@ wheels = [
 
 [[package]]
 name = "mao-45m-merge"
-version = "0.2.1"
+version = "0.3.0"
 source = { editable = "." }
 dependencies = [
     { name = "dask", extra = ["complete"] },

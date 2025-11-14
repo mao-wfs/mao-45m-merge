@@ -1,6 +1,6 @@
 [project]
 name = "mao-45m-merge"
-version = "0.2.1"
+version = "0.3.0"
 description = "MAO data merge for the Nobeyama 45m telescope"
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
@@ -34,6 +34,7 @@ email = "taniguchi.akio@gmail.com"
 file = "LICENSE"
 
 [project.urls]
+homepage = "https://mao-wfs.github.io/mao-45m-merge/v0.3.0"
 repository = "https://github.com/mao-wfs/mao-45m-merge"
 
 [build-system]
