@@ -1,6 +1,7 @@
 # project information
+project = "mao-45m-merge"
 author = "Akio Taniguchi"
-copyright = "2021-2022 Akio Taniguchi"
+copyright = "2021-2025 Akio Taniguchi"
 
 
 # general configuration
@@ -19,6 +20,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
 ]
+myst_heading_anchors = 3
 templates_path = ["_templates"]
 
 
@@ -26,4 +28,5 @@ templates_path = ["_templates"]
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "github_url": "https://github.com/mao-wfs/mao-45m-merge/",
+    "logo": {"text": "mao-45m-merge"},
 }
